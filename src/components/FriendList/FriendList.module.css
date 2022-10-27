@@ -1,0 +1,35 @@
+.friend_list {
+  background-color: #fff;
+
+  /* text-align: center; */
+  width: 900px;
+}
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+}
+.status {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: green;
+}
+.online {
+  background-color: green;
+}
+
+.ofline {
+  background-color: red;
+}
+
+.avatar {
+  width: 120px;
+}
+
+.name {
+  width: 300px;
+  color: black;
+}

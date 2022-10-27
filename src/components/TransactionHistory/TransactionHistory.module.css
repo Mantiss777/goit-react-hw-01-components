@@ -1,0 +1,32 @@
+.transaction_history {
+  color: aqua;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+}
+
+.title_line {
+  background-color: #000;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+}
+
+.title {
+  width: 300px;
+  padding: 20px;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgba(33, 150, 243, 0.9);
+}
+
+.text {
+  color: grey;
+
+  text-align: center;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+}
+
+.even__text {
+  background-color: #2196f3;
+}
+
+.odd__text {
+  background-color: #fff;
+}
