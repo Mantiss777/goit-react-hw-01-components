@@ -14,7 +14,7 @@ export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
+        height: '200vh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -31,8 +31,8 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics title="Upload stats" stats={data} />
-      {/* <Statistics stats={data} /> */}
+      {/* <Statistics title="Upload stats" stats={data} /> */}
+      <Statistics stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory transactions={transactions} />
     </div>
