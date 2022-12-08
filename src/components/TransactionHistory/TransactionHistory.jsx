@@ -16,7 +16,7 @@ export default function TransactionHistory({ transactions }) {
         {transactions.map(({ id, type, amount, currency }) => (
           <tr
             key={id}
-            // className={`${index % 2 === 0 ? css.even__text : css.odd__text}`}
+         
           >
             <td className={css.text}>{type}</td>
             <td className={css.text}>{amount}</td>
