@@ -1,19 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './TransactionHistory.module.css';
 
-export default function TransactionHistory({ transactions,}) {
- 
-  const elements = transactions.map(({ id, type, amount, currency }) => (
-    <tr
-      key={id}
-      // className={`${index % 2 === 0 ? css.even__text : css.odd__text}`}
-    >
-      <td className={css.text}>{type}</td>
-      <td className={css.text}>{amount}</td>
-      <td className={css.text}>{currency}</td>
-    </tr>
-  ));
-
+export default function TransactionHistory({ transactions }) {
   return (
     <table className={css.transaction_history}>
       <thead>
@@ -24,7 +12,18 @@ export default function TransactionHistory({ transactions,}) {
         </tr>
       </thead>
 
-      <tbody>{elements}</tbody>
+      <tbody>
+        {transactions.map(({ id, type, amount, currency }) => (
+          <tr
+            key={id}
+            // className={`${index % 2 === 0 ? css.even__text : css.odd__text}`}
+          >
+            <td className={css.text}>{type}</td>
+            <td className={css.text}>{amount}</td>
+            <td className={css.text}>{currency}</td>
+          </tr>
+        ))}
+      </tbody>
     </table>
   );
 }
